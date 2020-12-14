@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>App by ZeroX</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="../assets/img/loaloa.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/contact.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="page-top">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="107644251053897" theme_color="#47bad5" logged_in_greeting="Chào bạn! Tôi là Loa Loa. Hi vọng tôi sẽ giúp được bạn <3" logged_out_greeting="Chào bạn! Tôi là Loa Loa. Hi vọng tôi sẽ giúp được bạn <3">
+    </div>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a target="blank" class="navbar-brand js-scroll-trigger" href="https://www.facebook.com/loaloaMessEducation"><img src="#" alt="Logo" class="img-fix" /></a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#coder">Control</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="https://www.upsieutoc.com/images/2020/08/25/loaloa.png" alt="loaloa" border="0" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Loa Loa</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Cập nhật thông báo DUT nhanh nhất qua Messenger</p>
+        </div>
+    </header>
+    <!-- Control Section-->
+    <section class="page-section portfolio" id="coder">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Control</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Control Button-->
+            <form method="post" action="/" id="contactForm" name="sentMessage" novalidate="novalidate">
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button1" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 1</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 2</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 3</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 4</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button1" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 5</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 6</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 7</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 8</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button1" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 9</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 10</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 11</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 12</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button1" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 13</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 14</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 15</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 16</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button1" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 17</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 18</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 19</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                        <div class="text-center mt-4">
+                            <button type="submit" name="button2" value='{"id": 0, "command": "TOGGLE"}' class="btn btn-xl btn-outline-light"><i class="fas fa-download mr-2"></i>Button 20</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div> -->
+        </form>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Loa Loa là một trong những dự án của ZerosX Team. Xây dựng trên ngôn ngữ Python, JavaScript kết </br>hợp với API Facebook</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">Thay vì vào trang sinh viên hàng ngày, bạn sẽ nhận được tin tức trực tiếp qua Messenger từ
+                        <a target="blank" href="http://sv.dut.udn.vn/" style="color: aliceblue;">Trang tin tức sinh
+                            viên</a> <a target="blank" href="http://daotao.dut.udn.vn/SV/" style="color: azure;">http://sv.dut.udn.vn/</a>
+                    </p>
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a target="blank" class="btn btn-xl btn-outline-light" href="https://m.me/loaloaMessEducation">
+                    <i class="fas fa-download mr-2"></i> Đăng ký ngay
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">call us</h4>
+                            <p>+84 965 223 769</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marker-alt fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">location</h4>
+                            <p>Da Nang </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="fab fa-facebook-f fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">Facebook</h4>
+                            <p>Loa Loa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">email</h4>
+                            <p>support@zerosx.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Da Nang
+                        <br /> Viet Nam
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Detail</h4>
+                    <a target="blank" class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/loaloaMessEducation"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a target="blank" class="btn btn-outline-light btn-social mx-1" href="https://github.com/maithedung"><i class="fab fa-fw fa-github"></i></a>
+                    <a target="blank" class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/maithedung"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a target="blank" class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UC4J7hDJNhMmbUvvRL8XY1ng"><i
+                            class="fab fa-fw fa-youtube"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Dev</h4>
+                    <p class="lead mb-0">
+                        Nguyen Huy Tuong
+                        </br>
+                        Mai The Dung
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © Loa Loa 2020 by ZerosX Team</small></div>
+    </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a>
+    </div>
+    <!-- Portfolio Modals-->
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <!-- Core theme JS-->
+</body>
+
+</html>
